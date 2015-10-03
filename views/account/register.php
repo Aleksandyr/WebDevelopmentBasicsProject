@@ -1,6 +1,6 @@
 <h1>Register</h1>
 
-<form action="/account/register" method="post">
+<form action="/account/register" method="post" id="reg-form">
     <label for="username">Username:</label>
     <input id="username" type="text" name="username">
     <br />

@@ -1,17 +1,111 @@
-body>header{
-    background: #eee;
-    padding: 5px;
+body,ul,li,a{
+    padding: 0;
+    margin: 0;
 }
 
 body>header>a>img, body>header>ul, body>header>ul>li{
     display: inline-block;
     vertical-align: middle;
 }
+header{
+    background: #3366ff;
+}
+.menu{
+    display: inline-block;
+    width: 500px;
+}
+.menu ul{
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    display: table;
+    list-style-type: none;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0.6em;
+    padding: 0.7em;
+}
 
+.menu ul li:hover {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background: #00FF00;
+}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: blanchedalmond;
+
+}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+}
+.menu-login{
+    float: right;
+    display: inline-block;
+}
+.menu-login ul{
+    list-style-type: none;
+    margin-right: 1px;
+    display: inline-block;
+}
+.menu-login ul li {
+    display: inline-block;
+    margin: 0.6em;
+    padding: 0.7em;
+}
+.menu-login ul li:hover {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #00FF00;
+}
+.menu-login li a{
+    display: inline-block;
+    text-decoration: none;
+    color: blanchedalmond;
+}
 body>footer{
-    background: #eee;
-    padding: 5px;
     text-align: center;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background:#6cf;
+}
+
+.login-user h1{
+    text-align: center;
+}
+.login-user form{
+    width: 200px;
+    height: 190px;
+    margin-left: 520px;
+}
+.login-user form label{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 35px;
+}
+.login-user form input{
+    width: 160px;
+    height: 20px;
+    margin-right: 40px;
+}
+.login-user form #submit{
+    width: 160px;
+    height: 30px;
+
+}
+.login-user form a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+body>footer>p{
+    vertical-align: middle;
 }
 
 ul.info-messages {

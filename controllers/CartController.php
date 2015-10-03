@@ -20,9 +20,17 @@ class CartController extends BaseController
     }
 
     public function add($userId, $categoryId, $productId){
+        $isHaveProducts = $this->db->checkQuantityByProduct($productId);
+        if($isHaveProducts[0] <= 0){
+            $this->addErrorMessage("We don't have products anymore");
+            return $this->redirect('products');
+        }
+
+        $this->db->decreaseQuantityFromCurrProduct($productId);
+
         $this->db->add($userId, $categoryId, $productId);
 
-        $this->redirect('categories', 'products');
+        $this->redirect('products', 'index');
 
         $this->renderView(__FUNCTION__);
     }

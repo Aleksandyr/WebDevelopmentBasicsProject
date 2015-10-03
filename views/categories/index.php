@@ -1,6 +1,6 @@
 
 <h1>Categories</h1>
-<form action="/categories/products" method="post">
+<form action="/products/index" method="post">
     <label for="category_num">Enter your choice:</label>
     <input id="category_num" type="text" name="category_num">
     <input type="submit" value="Find" />

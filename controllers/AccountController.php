@@ -38,10 +38,6 @@ class AccountController extends BaseController {
 
     public function login(){
         if($this->isPost()){
-            unset($_SESSION['username']);
-            unset($_SESSION['isAdmin']);
-            unset($_SESSION['isEditor']);
-            unset($_SESSION['cash']);
             $username = $_POST['username'];
             $password = $_POST['password'];
             $isLoggedIn = $this->db->login($username, $password);

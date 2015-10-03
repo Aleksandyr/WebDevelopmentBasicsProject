@@ -19,4 +19,20 @@ class CartModel extends BaseModel
         $statement->execute();
         return $statement->affected_rows > 0;
     }
+
+
+    public function decreaseQuantityFromCurrProduct($productId) {
+        $statement = self::$db->prepare("UPDATE products
+                                            SET quantity = quantity - 1
+                                            WHERE id = ?");
+        $statement->bind_param("i", $productId);
+        $statement->execute();
+    }
+
+    public function checkQuantityByProduct($productId) {
+        $statement = self::$db->prepare("SELECT quantity FROM products WHERE id = ?");
+        $statement->bind_param("i", $productId);
+        $statement->execute();
+        return $statement->get_result()->fetch_row();
+    }
 }
