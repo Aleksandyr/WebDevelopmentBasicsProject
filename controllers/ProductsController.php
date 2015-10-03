@@ -6,6 +6,11 @@ class ProductsController extends BaseController{
     public function onInit(){
         $this->title = "Products";
         $this->db = new ProductsModel();
+
+        if($this->isLoggedIn()) {
+            $currUser = $this->db->getUser($_SESSION['username'])[0];
+            $this->currUser = $currUser;
+        }
     }
 
     public function index(){

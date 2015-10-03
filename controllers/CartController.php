@@ -12,9 +12,10 @@ class CartController extends BaseController
     public function index(){
         $this->authorize();
 
-        $userId = $this->db->getUser($_SESSION['username'])[0];
-        $this->userId = $userId;
-        $this->productsCart = $this->db->getAllProductsByUser($userId[0]);
+        $currUser = $this->db->getUser($_SESSION['username'])[0];
+        $this->currUser = $currUser;
+
+        $this->productsCart = $this->db->getAllProductsByUser($currUser[0]);
 
         $this->renderView();
     }

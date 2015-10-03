@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c88f0e4-68cf-4a98-88b0-82da6b5160e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/BaseModel.php" afterPath="$PROJECT_DIR$/models/BaseModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/HomeModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CartController.php" afterPath="$PROJECT_DIR$/controllers/CartController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/CartModel.php" afterPath="$PROJECT_DIR$/models/CartModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/cart/index.php" afterPath="$PROJECT_DIR$/views/cart/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/products/index.php" afterPath="$PROJECT_DIR$/views/products/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CategoriesController.php" afterPath="$PROJECT_DIR$/controllers/CategoriesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/HomeController.php" afterPath="$PROJECT_DIR$/controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/controllers/ProductsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/default/header.php" afterPath="$PROJECT_DIR$/views/layouts/default/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebDevelopmentBasicsProject.iws" />
@@ -29,23 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CartController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CartController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/CartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.576923">
-              <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-              <folding>
-                <marker date="1443895853008" expanded="true" signature="915:994" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.3558776">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layouts/default/header.php">
+      <file leaf-file-name="CategoriesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/CategoriesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.346153">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="42" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -54,21 +53,52 @@
       <file leaf-file-name="ProductsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.423077">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state vertical-scroll-proportion="-0.34615386">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="12" column="9" selection-start-line="9" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/ProductsModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.346153">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
-                <marker date="1443890813296" expanded="true" signature="127:176" placeholder="SELECT id, u..users..." />
+                <marker date="1443901985233" expanded="true" signature="136:414" placeholder="SELECT p.id,..products..." />
+                <marker date="1443901985233" expanded="true" signature="692:990" placeholder="SELECT p.id,..products..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/HomeModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layouts/default/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.346153">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,24 +109,7 @@
             <state vertical-scroll-proportion="-9.807693">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1443890712398" expanded="true" signature="449:494" placeholder="SELECT id, C..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/AccountModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615">
-              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-              <folding>
-                <marker date="1443690688241" expanded="true" signature="138:184" placeholder="SELECT COUNT..users..." />
-                <marker date="1443690688241" expanded="true" signature="512:576" placeholder="INSERT INTO ..." />
-                <marker date="1443690688241" expanded="true" signature="806:865" placeholder="SELECT id, u..users..." />
-                <marker date="1443690688241" expanded="true" signature="1267:1312" placeholder="SELECT is_ad..users..." />
-                <marker date="1443690688241" expanded="true" signature="1624:1670" placeholder="SELECT is_ed..users..." />
-                <marker date="1443690688241" expanded="true" signature="1981:2022" placeholder="SELECT cash ..users..." />
+                <marker date="1443901985218" expanded="true" signature="449:494" placeholder="SELECT id, C..users..." />
               </folding>
             </state>
           </provider>
@@ -105,52 +118,18 @@
       <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.807693">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CartModel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/CartModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.463768">
-              <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
-              <folding>
-                <marker date="1443895728776" expanded="true" signature="131:806" placeholder="SELECT p.id,..products..." />
-                <marker date="1443895728776" expanded="true" signature="1073:1139" placeholder="INSERT INTO ..." />
-                <marker date="1443895728776" expanded="true" signature="1407:1551" placeholder="UPDATE produ..." />
-                <marker date="1443895728776" expanded="true" signature="1748:1892" placeholder="UPDATE produ..." />
-                <marker date="1443895728776" expanded="true" signature="2081:2123" placeholder="SELECT quant..products..." />
-                <marker date="1443895728776" expanded="true" signature="2381:2542" placeholder="SELECT id FR..cart..." />
-                <marker date="1443895728776" expanded="true" signature="2804:2944" placeholder="UPDATE cart ..." />
-                <marker date="1443895728776" expanded="true" signature="3141:3310" placeholder="UPDATE cart ..." />
-                <marker date="1443895728776" expanded="true" signature="3498:3525" placeholder="DELETE FROM ..." />
-                <marker date="1443895728776" expanded="true" signature="3748:3881" placeholder="UPDATE users..." />
-                <marker date="1443895728776" expanded="true" signature="4067:4200" placeholder="UPDATE users..." />
-                <marker date="1443895728776" expanded="true" signature="4387:4470" placeholder="SELECT price..products..." />
-                <marker date="1443895728776" expanded="true" signature="4399:4470" placeholder="UPDATE users..." />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/cart/index.php">
+        <entry file="file://$PROJECT_DIR$/views/products/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -171,18 +150,21 @@
         <option value="$PROJECT_DIR$/views/account/register.php" />
         <option value="$PROJECT_DIR$/content/styles.css" />
         <option value="$PROJECT_DIR$/views/account/login.php" />
-        <option value="$PROJECT_DIR$/views/layouts/default/header.php" />
         <option value="$PROJECT_DIR$/views/categories/index.php" />
         <option value="$PROJECT_DIR$/models/CategoriesModel.php" />
-        <option value="$PROJECT_DIR$/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/models/ProductsModel.php" />
-        <option value="$PROJECT_DIR$/controllers/CategoriesController.php" />
         <option value="$PROJECT_DIR$/views/products/index.php" />
         <option value="$PROJECT_DIR$/models/BaseModel.php" />
         <option value="$PROJECT_DIR$/models/UsersModel.php" />
         <option value="$PROJECT_DIR$/views/cart/index.php" />
         <option value="$PROJECT_DIR$/models/CartModel.php" />
+        <option value="$PROJECT_DIR$/views/layouts/default/header.php" />
+        <option value="$PROJECT_DIR$/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/controllers/CartController.php" />
+        <option value="$PROJECT_DIR$/models/HomeModel.php" />
+        <option value="$PROJECT_DIR$/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/controllers/CategoriesController.php" />
       </list>
     </option>
   </component>
@@ -607,24 +589,24 @@
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -649,11 +631,91 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1443901985249" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1443901985218" expanded="true" signature="449:494" placeholder="SELECT id, C..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/AccountModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding>
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT is_ad..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT is_ed..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT cash ..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/CartModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT quant..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT id FR..cart..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT price..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cart/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/categories/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,10 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <marker date="1443881415413" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
-            <marker date="1443881415413" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,9 +752,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1443895853008" expanded="true" signature="915:994" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -715,19 +769,19 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
-            <marker date="1443895728776" expanded="true" signature="131:806" placeholder="SELECT p.id,..products..." />
-            <marker date="1443895728776" expanded="true" signature="1073:1139" placeholder="INSERT INTO ..." />
-            <marker date="1443895728776" expanded="true" signature="1407:1551" placeholder="UPDATE produ..." />
-            <marker date="1443895728776" expanded="true" signature="1748:1892" placeholder="UPDATE produ..." />
-            <marker date="1443895728776" expanded="true" signature="2081:2123" placeholder="SELECT quant..products..." />
-            <marker date="1443895728776" expanded="true" signature="2381:2542" placeholder="SELECT id FR..cart..." />
-            <marker date="1443895728776" expanded="true" signature="2804:2944" placeholder="UPDATE cart ..." />
-            <marker date="1443895728776" expanded="true" signature="3141:3310" placeholder="UPDATE cart ..." />
-            <marker date="1443895728776" expanded="true" signature="3498:3525" placeholder="DELETE FROM ..." />
-            <marker date="1443895728776" expanded="true" signature="3748:3881" placeholder="UPDATE users..." />
-            <marker date="1443895728776" expanded="true" signature="4067:4200" placeholder="UPDATE users..." />
-            <marker date="1443895728776" expanded="true" signature="4387:4470" placeholder="SELECT price..products..." />
-            <marker date="1443895728776" expanded="true" signature="4399:4470" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT quant..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT id FR..cart..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT price..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
           </folding>
         </state>
       </provider>
@@ -736,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,9 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1443881378384" expanded="true" signature="-1:-1" placeholder="SELECT id, n..categories..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,15 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,28 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1443881378384" expanded="true" signature="-1:-1" placeholder="SELECT id, n..categories..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/ProductsModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <marker date="1443881415413" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
-            <marker date="1443881415413" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,10 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1443622599716" expanded="true" signature="-1:-1" placeholder="SELECT id, t..books..." />
-            <marker date="1443622599716" expanded="true" signature="-1:-1" placeholder="SELECT id, t..books..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
           <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3076923">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,11 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615">
           <caret line="22" column="45" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <marker date="1443628967493" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..authors..." />
-            <marker date="1443628967493" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443628967493" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,15 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
           <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/products/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
           <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
           <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.769231">
           <caret line="45" column="68" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,49 +943,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <marker date="1443890813296" expanded="true" signature="127:176" placeholder="SELECT id, u..users..." />
+            <marker date="1443901985249" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/AccountModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
           <folding>
-            <marker date="1443690688241" expanded="true" signature="138:184" placeholder="SELECT COUNT..users..." />
-            <marker date="1443690688241" expanded="true" signature="512:576" placeholder="INSERT INTO ..." />
-            <marker date="1443690688241" expanded="true" signature="806:865" placeholder="SELECT id, u..users..." />
-            <marker date="1443690688241" expanded="true" signature="1267:1312" placeholder="SELECT is_ad..users..." />
-            <marker date="1443690688241" expanded="true" signature="1624:1670" placeholder="SELECT is_ed..users..." />
-            <marker date="1443690688241" expanded="true" signature="1981:2022" placeholder="SELECT cash ..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT is_ad..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT is_ed..users..." />
+            <marker date="1443901985218" expanded="true" signature="-1:-1" placeholder="SELECT cash ..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/views/cart/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.807693">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ProductsController.php">
+    <entry file="file://$PROJECT_DIR$/models/CartModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.423077">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state vertical-scroll-proportion="-8.192307">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+          <folding>
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT quant..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT id FR..cart..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE cart ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="SELECT price..products..." />
+            <marker date="1443901985233" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/products/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/default/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.346153">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="42" />
+        <state vertical-scroll-proportion="-17.346153">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1005,48 +1017,67 @@
         <state vertical-scroll-proportion="-9.807693">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <marker date="1443890712398" expanded="true" signature="449:494" placeholder="SELECT id, C..users..." />
+            <marker date="1443901985218" expanded="true" signature="449:494" placeholder="SELECT id, C..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cart/index.php">
+    <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ProductsModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1443901985233" expanded="true" signature="136:414" placeholder="SELECT p.id,..products..." />
+            <marker date="1443901985233" expanded="true" signature="692:990" placeholder="SELECT p.id,..products..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <caret line="12" column="9" selection-start-line="9" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.34615386">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/CartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.576923">
-          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-          <folding>
-            <marker date="1443895853008" expanded="true" signature="915:994" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/CartModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.463768">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
-          <folding>
-            <marker date="1443895728776" expanded="true" signature="131:806" placeholder="SELECT p.id,..products..." />
-            <marker date="1443895728776" expanded="true" signature="1073:1139" placeholder="INSERT INTO ..." />
-            <marker date="1443895728776" expanded="true" signature="1407:1551" placeholder="UPDATE produ..." />
-            <marker date="1443895728776" expanded="true" signature="1748:1892" placeholder="UPDATE produ..." />
-            <marker date="1443895728776" expanded="true" signature="2081:2123" placeholder="SELECT quant..products..." />
-            <marker date="1443895728776" expanded="true" signature="2381:2542" placeholder="SELECT id FR..cart..." />
-            <marker date="1443895728776" expanded="true" signature="2804:2944" placeholder="UPDATE cart ..." />
-            <marker date="1443895728776" expanded="true" signature="3141:3310" placeholder="UPDATE cart ..." />
-            <marker date="1443895728776" expanded="true" signature="3498:3525" placeholder="DELETE FROM ..." />
-            <marker date="1443895728776" expanded="true" signature="3748:3881" placeholder="UPDATE users..." />
-            <marker date="1443895728776" expanded="true" signature="4067:4200" placeholder="UPDATE users..." />
-            <marker date="1443895728776" expanded="true" signature="4387:4470" placeholder="SELECT price..products..." />
-            <marker date="1443895728776" expanded="true" signature="4399:4470" placeholder="UPDATE users..." />
-          </folding>
+        <state vertical-scroll-proportion="0.3558776">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

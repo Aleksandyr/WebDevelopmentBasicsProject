@@ -38,7 +38,7 @@
             <form action="/account/logout">
                 <input type="submit" value="Logout" />
             </form>
-            <p>Amount: <?= $_SESSION['cash']; ?>$</p>
+            <p>Amount: <?= $this->currUser[1]; ?>$</p>
         </div>
     <?php endif; ?>
 </header>
