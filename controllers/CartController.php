@@ -20,6 +20,14 @@ class CartController extends BaseController
     }
 
     public function add($userId, $categoryId, $productId){
+        $productMoney = (double)$this->db->getCurrProductMoney($productId)[0];
+        $userMoney = (int)$this->db->getUser($_SESSION['username'])[0][1];
+
+        if(!$this->isHaveMoney($userMoney, $productMoney)){
+            $this->addErrorMessage("You don't have enough money");
+            return $this->redirect('products');
+        }
+
         $isHaveProducts = $this->db->checkQuantityByProduct($productId);
         if($isHaveProducts[0] <= 0){
             $this->addErrorMessage("We don't have products anymore");
@@ -31,12 +39,14 @@ class CartController extends BaseController
         if(count($isTheSameProduct) > 0){
             $this->db->IncreaseQuantityForCurrProductCart($getCartId);
             $this->db->decreaseQuantityForCurrProduct($productId);
+            $this->db->decreaseUserMoney($productMoney, $userId);
+            $_SESSION['cash'] = $userMoney;
             return $this->redirect('products');
         } else{
             $this->db->decreaseQuantityForCurrProduct($productId);
         }
 
-
+        $this->db->decreaseUserMoney($productMoney, $userId);
 
         $this->db->add($userId, $categoryId, $productId);
 
@@ -46,9 +56,16 @@ class CartController extends BaseController
     }
 
     public function delete($categoryId, $productId, $cartQuantity){
+        $productMoney = (double)$this->db->getCurrProductMoney($productId)[0];
+        $userMoney = (int)$this->db->getUser($_SESSION['username'])[0][1];
+        $userId = $this->db->getUser($_SESSION['username'])[0][0];
+
+        $this->db->increaseUserMoney($productMoney, $userId);
+
         $this->db->decreaseQuantityFromCart($categoryId, $productId);
         $this->db->IncreaseQuantityForCurrProduct($productId);
         $getCartId = $this->db->checkForSameProductInCart($categoryId, $productId)[0][0];
+
         if($cartQuantity <= 1){
             $this->db->deleteFromCart($getCartId);
         }
@@ -56,6 +73,13 @@ class CartController extends BaseController
         $this->redirect('cart');
 
         $this->renderView(__FUNCTION__);
+    }
+
+    private function isHaveMoney($userMoney, $productMoney){
+        if($userMoney < $productMoney){
+            return false;
+        }
+        return true;
     }
 
 }

@@ -1,8 +1,6 @@
 <h1>Products</h1>
 <table>
     <tr>
-        <th>CategoryId</th>
-        <th>ProductId</th>
         <th>ProductName</th>
         <th>Quantity</th>
         <th>Price</th>
@@ -10,8 +8,6 @@
     </tr>
     <?php foreach ($this->products as $product): ?>
         <tr>
-            <td><?php echo $product[1] ?></td>
-            <td><?php echo $product[0] ?></td>
             <td><?php echo $product[2] ?></td>
             <td><?php echo $product[3] ?></td>
             <td><?php echo $product[4] ?>$</td>

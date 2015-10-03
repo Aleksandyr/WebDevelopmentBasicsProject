@@ -15,7 +15,7 @@ abstract class BaseModel
     }
 
     public function getUser($username){
-        $statement = self::$db->prepare("SELECT id FROM users WHERE username = ?");
+        $statement = self::$db->prepare("SELECT id, Cash FROM users WHERE username = ?");
         $statement->bind_param("s", $username);
         $statement->execute();
         return $statement->get_result()->fetch_all();

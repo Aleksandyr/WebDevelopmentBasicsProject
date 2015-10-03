@@ -3,13 +3,15 @@
 class CartModel extends BaseModel
 {
     public function getAllProductsByUser($id){
-        $statement = self::$db->prepare("SELECT p.id, p.name, c.quantity, c.id, pc.categoryId
-                                                FROM products p
-                                                  JOIN cart c
-                                                    ON c.product_id = p.id
-                                                  JOIN products_categories pc
-                                                    ON pc.productId = p.id
-                                                 WHERE c.user_id = ?");
+        $statement = self::$db->prepare("SELECT p.id, p.name, p.price, c.quantity, c.id, pc.categoryId, cat.name
+                                                    FROM products p
+                                                      JOIN cart c
+                                                        ON c.product_id = p.id
+                                                      JOIN products_categories pc
+                                                        ON pc.productId = p.id
+                                                      JOIN categories cat
+                                                         ON cat.id = pc.categoryId
+                                                     WHERE c.user_id = ?");
         $statement->bind_param("i", $id);
         $statement->execute();
         $restult = $statement->get_result()->fetch_all();
@@ -79,5 +81,29 @@ class CartModel extends BaseModel
         $statement->bind_param("i", $id);
         $statement->execute();
         return $statement->affected_rows > 0;
+    }
+
+    public function increaseUserMoney($money, $id){
+        $statement = self::$db->prepare("UPDATE users
+                                            set Cash = Cash + ?
+                                            WHERE id = ?");
+        $statement->bind_param("di", $money, $id);
+        $statement->execute();
+    }
+
+    public function decreaseUserMoney($money, $id){
+        $statement = self::$db->prepare("UPDATE users
+                                            set Cash = Cash - ?
+                                            WHERE id = ?");
+        $statement->bind_param("di", $money, $id);
+        $statement->execute();
+    }
+
+    public function getCurrProductMoney($productId){
+        $statement = self::$db->prepare("SELECT price FROM products
+                                            WHERE id = ?");
+        $statement->bind_param("i", $productId);
+        $statement->execute();
+        return $statement->get_result()->fetch_row();
     }
 }
