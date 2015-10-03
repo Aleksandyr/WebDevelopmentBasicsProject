@@ -26,7 +26,17 @@ class CartController extends BaseController
             return $this->redirect('products');
         }
 
-        $this->db->decreaseQuantityFromCurrProduct($productId);
+        $isTheSameProduct = $this->db->checkForSameProductInCart($categoryId, $productId);
+        $getCartId = $this->db->checkForSameProductInCart($categoryId, $productId)[0][0];
+        if(count($isTheSameProduct) > 0){
+            $this->db->IncreaseQuantityForCurrProductCart($getCartId);
+            $this->db->decreaseQuantityForCurrProduct($productId);
+            return $this->redirect('products');
+        } else{
+            $this->db->decreaseQuantityForCurrProduct($productId);
+        }
+
+
 
         $this->db->add($userId, $categoryId, $productId);
 
@@ -35,5 +45,17 @@ class CartController extends BaseController
         $this->renderView(__FUNCTION__);
     }
 
+    public function delete($categoryId, $productId, $cartQuantity){
+        $this->db->decreaseQuantityFromCart($categoryId, $productId);
+        $this->db->IncreaseQuantityForCurrProduct($productId);
+        $getCartId = $this->db->checkForSameProductInCart($categoryId, $productId)[0][0];
+        if($cartQuantity <= 1){
+            $this->db->deleteFromCart($getCartId);
+        }
+
+        $this->redirect('cart');
+
+        $this->renderView(__FUNCTION__);
+    }
 
 }
