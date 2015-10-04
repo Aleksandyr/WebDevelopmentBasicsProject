@@ -13,6 +13,13 @@ class ProductsModel extends BaseModel
         return $restult;
     }
 
+    public function getAllProducts(){
+        $statement = self::$db->prepare("SELECT id, name FROM products ");
+        $statement->execute();
+        $restult = $statement->get_result()->fetch_all();
+        return $restult;
+    }
+
     public function getFilteredProductsByCategory($id, $from, $size){
         $statement = self::$db->prepare("SELECT p.id, p.name FROM products p
                                             JOIN products_categories pc

@@ -17,11 +17,13 @@ class CategoriesController extends BaseController
     public function index(){
         $this->authorize();
 
-
-
         $this->categories = $this->db->getAllCategories();
 
         $this->renderView();
+    }
+
+    public function addProduct(){
+        $this->redirect('admin');
     }
 
 }

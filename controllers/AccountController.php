@@ -25,9 +25,9 @@ class AccountController extends BaseController {
             $isRegister = $this->db->register($username, $password);
             if($isRegister) {
                 $_SESSION['username'] = $username;
-                $_SESSION['cash'] = INITIAL_CASH;
+                //$_SESSION['cash'] = INITIAL_CASH;
                 $this->addInfoMessage("Successful registration!");
-                $this->redirect("books", "index");
+                $this->redirect("home", "index");
             } else{
                 $this->addErrorMessage("Register faild!");
             }
