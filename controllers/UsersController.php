@@ -12,21 +12,40 @@ class UsersController extends BaseController{
         $this->isAdmin();
         $this->authorize();
 
+        $this->allUsers = $this->db->getAllUsers();
+
         $this->renderView();
     }
 
-    public function found(){
-        $this->isAdmin();
-        if($this->isPost()){
-            $this->name = $_POST['enter_username'];
-            if($this->db->getByName($this->name)){
-                $this->addInfoMessage("User is found.");
-            } else{
-                $this->addErrorMessage("User is not found.");
-                $this->redirect('users', 'index');
-            };
-        }
 
-        $this->renderView(__FUNCTION__);
+    public function setUserRole($id){
+        if($this->isAdmin()){
+            if($this->isPost()) {
+                $isAdmin = $_POST['isAdmin'];
+                $isEditor = $_POST['isEditor'];
+                var_dump($isAdmin);
+                var_dump($isEditor);
+                if((empty($isAdmin) || $isAdmin == null) && (empty($isEditor) || $isEditor == null)){
+                    $this->addErrorMessage('Chose one filed!');
+                    return $this->redirect('users');
+                } if((!empty($isAdmin) || !$isAdmin == null) && (!empty($isEditor) || !$isEditor == null)){
+                    $this->addErrorMessage('You should chose only one field!');
+                    return $this->redirect('users');
+                }
+
+                if((empty($isAdmin) || $isAdmin == null)){
+                    $this->db->setUserToBeEditor($id);
+                    $this->addInfoMessage('You successful set user to be editor!');
+                    return $this->redirect('users');
+                }
+
+                if((empty($isEditor) || $isEditor == null)){
+                    $this->db->setUserToBeAdmin($id);
+                    $this->addInfoMessage('You successful set user to be admin!');
+                    return $this->redirect('users');
+                }
+            }
+            $this->redirect('users');
+        }
     }
 }

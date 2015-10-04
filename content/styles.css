@@ -46,6 +46,12 @@ form input{
     margin-bottom: 10px;
 }
 
+.user-role-form input{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
 ul.info-messages {
     width: 80%;
     margin: 10px auto;

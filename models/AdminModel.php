@@ -37,4 +37,11 @@ class AdminModel extends BaseModel
         $statement->execute();
         return $statement->get_result()->fetch_row();
     }
+
+    public function setUserAdmin(){
+        $statement = self::$db->prepare("SELECT productId FROM products_categories WHERE productId = ? && categoryId = ?;");
+        $statement->bind_param("ii",$productId, $categoryId);
+        $statement->execute();
+        return $statement->get_result()->fetch_row();
+    }
 }
