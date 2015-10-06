@@ -69,6 +69,7 @@ class AccountController extends BaseController {
         unset($_SESSION['isAdmin']);
         unset($_SESSION['isEditor']);
         unset($_SESSION['cash']);
+
         $this->addInfoMessage("You are logged out!");
         $this->redirectToUrl("/");
     }

@@ -13,7 +13,7 @@ class AccountModel extends BaseModel{
 
         $hash_pass = password_hash($password, PASSWORD_BCRYPT);
 
-        $registerStatement = self::$db->prepare("INSERT INTO users (username, password, cash) VALUES (?, ?, 1000)");
+        $registerStatement = self::$db->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
         $registerStatement->bind_param("ss", $username, $hash_pass);
         $registerStatement->execute();
         return true;
@@ -24,12 +24,13 @@ class AccountModel extends BaseModel{
         $statement->bind_param("s", $username);
         $statement->execute();
         $result = $statement->get_result()->fetch_assoc();
-        if(password_verify($password, $result['password']) && ['username'] != null || $result['username'] != ''){
+        if(password_verify($password, $result['password'])){
             return true;
         }
 
         return false;
     }
+
 
     public function isAdmin($username){
         $statement = self::$db->prepare("SELECT is_admin FROM users WHERE username = ?");;
